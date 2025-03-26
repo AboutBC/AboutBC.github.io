@@ -116,28 +116,28 @@
   ],
   "references": [
     {
-      "name": "Dr. Jeffrey Milyo",
+      "name": "Dr. Jeffrey Milyo <br> Advisor - University of Missouri, Columbia",
       "description": "Advisor - University of Missouri, Columbia",
       "icon": "fa-solid fa-laptop",
       "reference": "milyoj@missouri.edu"
     },
     {
-      "name": "Dr. Brittany Street",
+      "name": "Dr. Brittany Street <br> Co-Advisor - University of Missouri, Columbia",
       "description": "Co-Advisor - University of Missouri, Columbia",
       "icon": "fa-solid fa-laptop",
       "reference": "streetb@missouri.edu"
     },
     {
-      "name": "Dr. Christina Foreman",
+      "name": "Dr. Christina Foreman <br> Coworker - Office of Management and Budget",
       "description": "Coworker - Office of Management and Budget",
       "icon": "fa-solid fa-laptop",
       "reference": "mcjforeman@gmail.com"
     },
     {
-      "name": "Brett Harris",
+      "name": "Brett Harris <br> Supervisor at T-Mobile",
       "description": "Supervisor - T-Mobile",
       "icon": "fa-solid fa-laptop",
-      "reference": "From LinkedIn: `One thing is certain about Brendan...he doesn't need a recommendation to justify the value he can provide. Brendan is by far the most gifted employee I've had the pleasure of managing. If Brendan chooses to go back to corporate America I look forward to the time I can apply for a position on his team. Brendan's future success is only limited by how far Brendan wants to take his career. Brendan is an A+ employee from a financial analysis perspective, data analysis, process improvement, and business unit strategy. There is not a single task I put on his plate that he didn't ace and he consistently made me look better than I deserve. I really look forward to tracking Brendan through [h]is career and I anticipate great things in the future.'"
+      "reference": "From LinkedIn: <br> `One thing is certain about Brendan...he doesn't need a recommendation to justify the value he can provide. Brendan is by far the most gifted employee I've had the pleasure of managing. If Brendan chooses to go back to corporate America I look forward to the time I can apply for a position on his team. Brendan's future success is only limited by how far Brendan wants to take his career. Brendan is an A+ employee from a financial analysis perspective, data analysis, process improvement, and business unit strategy. There is not a single task I put on his plate that he didn't ace and he consistently made me look better than I deserve. I really look forward to tracking Brendan through [h]is career and I anticipate great things in the future.'"
     }
   ],
   "projects": [
