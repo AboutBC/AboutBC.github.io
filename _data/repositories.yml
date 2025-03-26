@@ -1,8 +1,10 @@
 github_users:
   - AboutBC
+  - Brendan-Cirillo-OMB
 
 repo_description_lines_max: 2
 
 github_repos:
   - AboutBC/AboutBC.github.io
   - AboutBC/fantasy_football_ml
+  - AboutBC/python_trade_maps
