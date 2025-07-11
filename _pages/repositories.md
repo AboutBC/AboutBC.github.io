@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: 
-nav: false
+nav_exclude: true
 nav_order: 2
 ---
 
