@@ -16,7 +16,7 @@ social: false # includes social icons at the bottom of the page
 ---
 
 <p>
-I’m an <strong> economist and policy researcher</strong> with experience working in the White House across two different 
+I’m an <strong> economist and policy researcher</strong> with experience working in <strong>the White House </strong> across two different 
 administrations.
 My work focuses on the evaluation of public programs and policies, with projects in political economy and applied 
 microeconomic policy analysis.
