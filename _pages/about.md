@@ -24,7 +24,7 @@ microeconomic policy analysis.
 
 <p>
 Currently, I served as a <strong>Pathways Economist</strong> at the <em>Office of Management and Budget 
-(OMB)</em> in <em>the White House </em>.
+(OMB)</em> in <strong>the White House </strong>.
 Prviously, I was an <strong>Analyst Intern</strong> at the <em>U.S. Government Accountability Office (GAO)</em>. 
 My academic research examines the causal impacts of <strong>gun policies</strong>, <strong>voting rights 
 protections</strong>, and <strong>drug testing policies</strong> on <strong>TANF</strong> and
