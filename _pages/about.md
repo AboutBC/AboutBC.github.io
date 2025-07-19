@@ -35,5 +35,7 @@ protections</strong>, and <strong>drug testing policies</strong> on <strong>TANF
 I have experience in <strong>R</strong>, <strong>Python</strong>, and <strong>Stata</strong>.
 </p>
 
-
+<p>
+If the resume page say I'm Albert Einstein, please let me know. Either way, the PDF of my resume is accurate on that page.
+</p>
 
