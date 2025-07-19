@@ -126,8 +126,6 @@ projects:
 - name: Predicting SNAP Usage
   summary: Using various machine learning methods to predict the biannual SNAP numbers.
   highlights:
-  - Quantum Teleportation
-  - Quantum Cryptography
   startDate: '2025-07-01'
   endDate: ''
   url: pending
