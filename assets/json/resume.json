@@ -38,15 +38,17 @@
     {
       "name": "Office of Management and Budget",
       "location": "Washington, DC", 
-      "position": "Economist - Intern",
+      "position": "Pathways Economist",
       "startDate": "2024-02-01",
       "summary": "Internal economic consultant for OMB working across divisions to help score and finalize the President's budget.",
       "highlights": 
       [
-        "Streamlined and fixed the individual tax model for the President's Budget bridging the gap between OMB and other tax agency scores.",
-        "Example Scoring: $3.8 trillion dollars over the budget window by extending the TCJA tax brackets and rates (does not include the corporate portion).",
-        "Maintained and contributed to the new tariff model within Economic Policy. This is used to score current tariff proposals for the President's Budget.",
-        "Explored the impact of the Biden Administration's Inflation Reduction Act to show there was no crowding-out effect and, if anything, a crowding-in effect."
+        "Led the team that rewrote and modernized the federal individual income tax microsimulation model in Python and Stata, significantly improving efficiency and accuracy in scoring tax policy changes for the President’s Budget.",
+        "Modeled the revenue impact of closing international profit-shifting loopholes, contributing to forecasts of $600-700 billion in potential federal tax gains.",
+        "Forecasted job and GDP recovery potential under scenarios of reduced import penetration in autos; produced both optimistic (175K jobs, $200B) and conservative (50K jobs, $80B) estimates.",
+        "Conducted policy evaluation of Inflation Reduction Act investments, estimating the economic impact of $4 billion in targeted community funding.",
+        "Provided fact-checking and economic analysis for presidential speeches and internal memos; contributed free trade agreement analysis that informed cabinet-level discussions and external communications.",
+        "Co-authored weekly memos for senior OMB leadership and Associate Directors, including economic insights into tariff revenue estimation versus actual revenue collection."
       ]
     },
     {
@@ -55,11 +57,50 @@
       "position": "Research Assistant",
       "startDate": "2021-05-01",
       "endDate": "2025-05-30",
-      "summary": "Two different research assistant positions. One working with stochastic macroeconomic predictions and the other working on political economy projects.",
       "highlights": 
       [
-        "Conducted macroeconomic stochastic projections for an agricultural economic model to better match the historic stochastic process.", 
-        "Performed a variety of causal analysis on voting policy changes and their impact on voting, registration, and trust in elections."
+        "Designed and implemented econometric methods to evaluate the policy impact of state and federal reforms in health, crime, and voting.", 
+        "Built forecasting tools for agricultural economics, improving projection accuracy in data-constrained environments.",
+        "Taught classes of 50+ students in microeconomics and political economics.",
+        "Presented economic research at 4 academic conferences."
+      ]
+    },
+    {
+      "name": "Government Accountability Office",
+      "location": "Washington, DC",
+      "position": "Analyst Intern",
+      "startDate": "2023-05-01",
+      "endDate": "2023-08-15",
+      "highlights": 
+      [
+        "Reviewed workflows for measuring credit disparities for a congressional report influencing policy decisions.",
+        "Assessed the financial impact of a $1.45 billion federal grant program in the Farm Credit System within a small interdisciplinary team.",
+        "Delivered internal training on student loan statistics and potential policy implications."
+      ]
+    },
+    {
+      "name": "Economic Consulting",
+      "location": "Columbia, Missouri",
+      "startDate": "2023-05-01",
+      "endDate": "2023-12-31",
+      "summary": "Independent work for various legal issues in the the State of Missouri",
+      "highlights": 
+      [
+        "Designed and implemented Monte Carlo simulations to quantify the financial impact of potential wrongdoing, directly informing litigation strategies.",
+        "Translated economic risk analysis into courtroom-appropriate documentation."
+      ]
+    },    
+    {
+      "name": "T-Mobile (formerly Sprint)",
+      "location": "Overland Park, Kansas",
+      "startDate": "2017-09-01",
+      "endDate": "2020-09-31",
+      "highlights": 
+      [
+        "Built and maintained Excel-based pricing models for enterprise wireless and wireline contracts, incorporating cost structures, margin targets, and customer-specific terms.",
+        "Conducted customer-level financial analysis in Excel to estimate customer lifetime value.", 
+        "Collaborated with sales teams to support large account negotiations using customized pricing solutions.",
+        "Developed and launched an internal website to centralize pricing tools and streamline communication across the pricing department."
       ]
     }
   ],
@@ -149,7 +190,7 @@
     {
       "name": "Predicting SNAP Usage",
       "summary": "Using various machine learning methods to predict the biannual SNAP participation and spending.",
-      "highlights": [""],
+      "highlights": ["Large decreases in TANF enrollment.",  "Spillover effects on SNAP enrollment"],
       "startDate": "2025-07-01",
       "endDate": "",
       "url": "pending"
