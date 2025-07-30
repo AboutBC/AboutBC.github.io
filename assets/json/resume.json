@@ -44,11 +44,12 @@
       "highlights": 
       [
         "Led the team that rewrote and modernized the federal individual income tax microsimulation model in Python and Stata, significantly improving efficiency and accuracy in scoring tax policy changes for the President’s Budget.",
-        "Modeled the revenue impact of closing international profit-shifting loopholes, contributing to forecasts of $600-700 billion in potential federal tax gains.",
-        "Forecasted job and GDP recovery potential under scenarios of reduced import penetration in autos; produced both optimistic (175K jobs, $200B) and conservative (50K jobs, $80B) estimates.",
-        "Conducted policy evaluation of Inflation Reduction Act investments, estimating the economic impact of $4 billion in targeted community funding.",
+        "Modeled the revenue impact of closing international profit-shifting loopholes by estimating behavioral responses related to tax avoidance behavior to provide robust estimates to senior leadership.", 
+        "Forecasted job and GDP recovery potential under scenarios of reduced import penetration in autos by examining market size, capacity, and assessing the feasibility of producing substitutes for foreign vehicles.",
+        "Conducted policy evaluation of Inflation Reduction Act investments, estimating the economic impact of $4 billion in targeted community funding on local employment, wages, and business creation.",
         "Provided fact-checking and economic analysis for presidential speeches and internal memos; contributed free trade agreement analysis that informed cabinet-level discussions and external communications.",
         "Co-authored weekly memos for senior OMB leadership and Associate Directors, including economic insights into tariff revenue estimation versus actual revenue collection."
+
       ]
     },
     {
@@ -93,6 +94,7 @@
     {
       "name": "T-Mobile (formerly Sprint)",
       "location": "Overland Park, Kansas",
+      "position": "Senior Pricing Analyst",
       "startDate": "2017-09-01",
       "endDate": "2020-09-31",
       "highlights": 
