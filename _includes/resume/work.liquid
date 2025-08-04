@@ -5,7 +5,7 @@ Manually sort work items: treat "Present" as far future date (e.g., 9999-12-31)
 {% assign work_entries = work_entries | map: "content" %}
 
 {% assign sorted_work = work_entries | sort: "sortKey" %}
-{% assign sorted_work = sorted_work | reverse %}
+{% assign sorted_work = sorted_work %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in work_entries %}
@@ -18,17 +18,17 @@ Manually sort work items: treat "Present" as far future date (e.g., 9999-12-31)
     {% assign content = content | merge: {"sortKey": sortKey} %}
   {% endfor %}
 
-  {% assign sorted_work = work_entries | sort: "sortKey" | reverse %}
+  {% assign sorted_work = work_entries | sort: "sortKey" %}
 
   {% for content in sorted_work %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% assign startDateFormatted = content.startDate | date: "%B %Y" %}
+          {% assign startDateFormatted = content.startDate | date: "%b %Y" %}
           {% if content.endDate == "9999-12-31" or content.endDate == "" %}
             {% assign endDateFormatted = "Present" %}
           {% else %}
-            {% assign endDateFormatted = content.endDate | date: "%B %Y" %}
+            {% assign endDateFormatted = content.endDate | date: "%b %Y" %}
           {% endif %}
           <table class="table-cv">
             <tbody>
