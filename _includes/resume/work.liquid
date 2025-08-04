@@ -1,28 +1,17 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign work = data[1] | sort: 'endDate' | reverse %}
-  {% for job in sorted_jobs %}
-  <div class="job">
-    <h4>{{ job.position }} at {{ job.name }}</h4>
-    <p>
-      {{ job.startDate | date: "%B %Y" }} - 
-      {% if job.endDate == "9999-12-31" %}
-        Present
-      {% else %}
-        {{ job.endDate | date: "%B %Y" }}
-      {% endif %}
-    </p>
-    <p>{{ job.summary }}</p>
-  </div>
-  {% endfor %}
-  {% for content in work %}
+  {% assign work_sorted = data[1] | sort: 'endDate' | reverse %}
+  {% for content in work_sorted %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
           {% if content.startDate %}
-            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
-            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
-            {% assign date = startDate | append: ' - ' %}
-            {% assign date = date | append: endDate %}
+            {% assign start = content.startDate | date: "%Y.%m" %}
+            {% if content.endDate == "9999-12-31" or content.endDate == "" %}
+              {% assign end = "Present" %}
+            {% else %}
+              {% assign end = content.endDate | date: "%Y.%m" %}
+            {% endif %}
+            {% assign date = start | append: ' - ' | append: end %}
           {% else %}
             {% assign date = '' %}
           {% endif %}
@@ -64,3 +53,4 @@
     </li>
   {% endfor %}
 </ul>
+
