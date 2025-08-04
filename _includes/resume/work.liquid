@@ -1,30 +1,17 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign work_sorted = data[1] | map: "content" %}
-
-  {%- comment -%}
-  Assign sort keys: "9999-12-31" for missing endDate, then sort descending
-  {%- endcomment -%}
-  {% for content in work_sorted %}
-    {% assign rawEndDate = content.endDate | default: "9999-12-31" %}
-    {% capture sortKey %}{{ rawEndDate | date: "%Y%m%d" }}{% endcapture %}
-    {% assign content = content | merge: {"sortKey": sortKey} %}
-  {% endfor %}
-
-  {%- assign sorted_work = work_sorted | sort: "sortKey" | reverse -%}
-
-  {% for content in sorted_work %}
+  {% assign work = data[1] | sort: 'endDate' | reverse %}
+  {% for content in work %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
-          {% assign endDateRaw = content.endDate | default: "" %}
-          {% if endDateRaw == "" %}
-            {% assign endDate = "Present" %}
+          {% if content.startDate %}
+            {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
+            {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+            {% assign date = startDate | append: ' - ' %}
+            {% assign date = date | append: endDate %}
           {% else %}
-            {% assign endDate = endDateRaw | split: '-' | slice: 0, 2 | join: '.' %}
+            {% assign date = '' %}
           {% endif %}
-          {% assign date = startDate | append: ' - ' | append: endDate %}
-
           <table class="table-cv">
             <tbody>
               <tr>
