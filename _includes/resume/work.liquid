@@ -1,5 +1,19 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% assign work = data[1] | sort: 'endDate' | reverse %}
+  {% for job in sorted_jobs %}
+  <div class="job">
+    <h4>{{ job.position }} at {{ job.name }}</h4>
+    <p>
+      {{ job.startDate | date: "%B %Y" }} - 
+      {% if job.endDate == "9999-12-31" %}
+        Present
+      {% else %}
+        {{ job.endDate | date: "%B %Y" }}
+      {% endif %}
+    </p>
+    <p>{{ job.summary }}</p>
+  </div>
+  {% endfor %}
   {% for content in work %}
     <li class="list-group-item">
       <div class="row">
