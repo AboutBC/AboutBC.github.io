@@ -1,26 +1,31 @@
-{% assign processed_work = "" | split: "" %}
+{% comment %}
+Manually sort work items: treat "Present" as far future date (e.g., 9999-12-31)
+{% endcomment %}
+{% assign work_entries = data[1] %}
+{% assign work_entries = work_entries | map: "content" %}
 
-{% for item in data[1] %}
-  {% assign raw_end = item.endDate | default: "9999-12-31" %}
-  {% if raw_end == "" %}
-    {% assign fixed_end = "9999-12-31" %}
-  {% else %}
-    {% assign fixed_end = raw_end %}
-  {% endif %}
-  {% capture sort_key %}{{ fixed_end | date: "%Y%m%d" }}{% endcapture %}
-  {% assign item = item | merge: {"_sort_key": sort_key} %}
-  {% assign processed_work = processed_work | push: item %}
-{% endfor %}
-
-{% assign sorted_work = processed_work | sort: "_sort_key" | reverse %}
+{% assign sorted_work = work_entries | sort: "sortKey" %}
+{% assign sorted_work = sorted_work | reverse %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
+  {% for content in work_entries %}
+    {% assign endDateRaw = content.endDate | default: "9999-12-31" %}
+    {% if endDateRaw = "" %}
+        {% assign endDateRaw = "9999-12-31" %}
+    {% endif %}
+    {% assign sortKey = endDateRaw %}
+    {% capture sortKey %}{{ endDateRaw | date: "%Y%m%d" }}{% endcapture %}
+    {% assign content = content | merge: {"sortKey": sortKey} %}
+  {% endfor %}
+
+  {% assign sorted_work = work_entries | sort: "sortKey" | reverse %}
+
   {% for content in sorted_work %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
           {% assign startDateFormatted = content.startDate | date: "%B %Y" %}
-          {% if content.endDate == "" or content.endDate == nil %}
+          {% if content.endDate == "9999-12-31" or content.endDate == "" %}
             {% assign endDateFormatted = "Present" %}
           {% else %}
             {% assign endDateFormatted = content.endDate | date: "%B %Y" %}
@@ -49,7 +54,7 @@
         </div>
         <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
           <h6 class="title font-weight-bold ml-1 ml-md-4">
-            {{ content.position }}
+            <a href="{{ content.url }}">{{ content.position }}</a>
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
