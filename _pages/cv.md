@@ -9,4 +9,4 @@ description:
 toc:
   sidebar: left
 ---
-![img.png](../assets/pdf/pdf_image.png)
+![CV](/assets/pdf/pdf_image.png)
